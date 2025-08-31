@@ -1,7 +1,5 @@
 import LoginForm from "./LoginForm";
-import MenuModal from "./MenuModal"
+import Header from "./Header";
+import Navbar from "./Navbar";
 
-
-
-
-export {LoginForm, MenuModal}
+export {LoginForm,  Header, Navbar}
