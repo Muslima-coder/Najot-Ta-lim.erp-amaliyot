@@ -6,6 +6,7 @@ import { useCookies } from 'react-cookie';
 import { API } from '../hooks';
 import { toast } from 'react-toastify';
 import { LogoIcon } from '../assets/icons';
+import { PATH } from '../components';
 
 const LoginForm: FC = () => {
   const [,setCookies] = useCookies(['accessToken'])
@@ -18,7 +19,7 @@ const LoginForm: FC = () => {
         onClose: () => {
           setIsLoading(false)
           setCookies("accessToken", res.data.accessToken)
-          location.pathname = "/"
+          location.pathname = PATH.stacks
         },
         autoClose: 2000
       })

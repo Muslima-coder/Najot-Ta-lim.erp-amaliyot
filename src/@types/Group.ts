@@ -1,0 +1,27 @@
+import type { ReactNode } from "react"
+
+export interface GroupType {
+    id:number,
+    stackId:number,
+    name:string,
+    status:boolean,
+    roomId: number,
+    createdAt: string,
+    stack: {
+        id:number,
+        name:string,
+        image:string,
+        createdAt: string,
+    },
+    room: {
+        id:number,
+        numberId:number,
+        name:string,
+        createdAt: string,
+    },
+
+    key:number,
+    roomName?:string,
+    stackName?:string,
+    action:ReactNode
+}

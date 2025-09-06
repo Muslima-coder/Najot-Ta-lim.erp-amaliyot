@@ -4,7 +4,10 @@ const PATH = {
     groups: "/my-groups",
     teachers: "/teachers",
     students: "/students",
-    stacks: "/stacks"
+    stacks: "/stacks",
+    stacksCreate: "/stacks/create",
+    stacksUpdate: "/stacks/:id/update",
+    stacksMore: "/stacks/:id"
 }
 
 export default PATH

@@ -1,7 +1,10 @@
+import { PageCaption } from "../../components"
 
 const Groups = () => {
   return (
-    <div>Groups </div>
+    <div className="p-5">
+      <PageCaption title="Guruhlar" count={15}/>
+    </div>
   )
 }
 

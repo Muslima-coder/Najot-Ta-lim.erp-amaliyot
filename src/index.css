@@ -6,6 +6,7 @@
 
 body{
     background-color: #f1f0ee;
+    overflow-y: hidden;
 }
 
 .ant-input-outlined:hover{
@@ -45,4 +46,13 @@ body{
 
 .navbar-menu > li{
     padding: 25px !important;
+}
+
+.ant-card-cover{
+  width: 300px !important;
+}
+
+.ant-upload{
+    width: 350px !important;
+    height: 200px !important;
 }
