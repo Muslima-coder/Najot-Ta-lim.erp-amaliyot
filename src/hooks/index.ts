@@ -1,5 +1,9 @@
-import API from "./getEnx"
-import instance from "./instance"
 
 
-export {API, instance}
+
+import API from "./getEnv";
+import instance from "./instance";
+import debounce from "./debounce";
+
+
+export {API, instance, debounce}

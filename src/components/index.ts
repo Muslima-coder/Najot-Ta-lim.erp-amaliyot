@@ -1,9 +1,9 @@
-import PATH from "./PATH"
-import PageLoading from "./PageLoading"
-import PageCaption from "./PageCaption"
-import CreateCaption from "./CreateCaption"
-import UploadFiles from "./UploadFile"
-import StackSkeleton from "./StackSkeleton"
+import PATH from "./PATH";
+import PageLoading from "./PageLoading";
+import PageCaption from "./PageCaption";
+import CreateCaption from "./CreateCaption";
+import { StackSkeleton } from "./skeleton";
+import UploadFile from "./UploadFile";
+import CustomTable from "./CustomTable";
 
-
-export {PATH,  PageLoading, PageCaption, CreateCaption, UploadFiles, StackSkeleton}
+export {PATH, PageLoading, PageCaption, CreateCaption, StackSkeleton, UploadFile, CustomTable}

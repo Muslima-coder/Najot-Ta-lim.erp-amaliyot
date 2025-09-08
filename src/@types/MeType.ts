@@ -1,3 +1,3 @@
 export interface MeType {
-    role?:string
+  role?:string
 }

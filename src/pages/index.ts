@@ -1,16 +1,16 @@
-import { lazy } from "react";
-const Login = lazy(() => import("./Auth/Login"))
+import { lazy } from "react"
 
-import LoginHome from "./Auth/LoginHome";
-import DashboardHome from "./dashboard/DashboardHome";
-import Groups from "./dashboard/Groups";
-import Teachers from "./dashboard/Teachers";
-import Students from "./dashboard/Students";
+const Login = lazy(() => import("./auth/Login")) 
+import LoginHome from "./auth/LoginHome"
+import DashboardHome from "./dashboard/DashboardHome"
+import Teachers from "./dashboard/Teachers"
+import Students from "./dashboard/Students"
 
+import Groups from "./dashboard/groups/Groups"
+import GroupCreate from "./dashboard/groups/GroupCreate"
 
 import Stacks from "./dashboard/stacks/Stacks"
-import StacksCreate from "./dashboard/stacks/StacksCreate";
-import StacksMore from "./dashboard/stacks/StackMore"
+import StacksCreate from "./dashboard/stacks/StacksCreate"
+import StackMore from "./dashboard/stacks/StackMore"
 
-
-export {Login, LoginHome, DashboardHome, Groups, Stacks, Teachers, Students, StacksCreate, StacksMore}
+export {LoginHome, Login, DashboardHome, Groups, Stacks, Teachers, Students, StacksCreate, StackMore, GroupCreate}

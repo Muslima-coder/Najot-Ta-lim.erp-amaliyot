@@ -4,8 +4,8 @@ import { PATH } from "../../components"
 const LoginHome = () => {
   useEffect(() => {
     location.pathname = PATH.login
-  }, [])
-  return ""
+  },[])
+  return "";
 }
 
 export default LoginHome

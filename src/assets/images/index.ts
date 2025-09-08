@@ -1,4 +1,3 @@
-import Logo from "./LogoImg.svg"
-
+import Logo from "./logo.svg"
 
 export {Logo}

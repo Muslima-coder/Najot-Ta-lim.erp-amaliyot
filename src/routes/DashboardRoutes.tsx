@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom"
 import { PATH } from "../components"
-import { DashboardHome, Groups, Stacks, StacksCreate, StacksMore, Students, Teachers } from "../pages"
-import { useState } from "react"
+import { DashboardHome, GroupCreate, Groups, StackMore, Stacks, StacksCreate, Students, Teachers } from "../pages"
 import { Header, Navbar } from "../modules"
+import { useState } from "react"
 
 const DashboardRoutes = () => {
   const [collapse, setCollapse] = useState<boolean>(false)
@@ -14,15 +14,15 @@ const DashboardRoutes = () => {
     {id:5, path:PATH.home, element:<DashboardHome/>},
     {id:6, path:PATH.stacksCreate, element:<StacksCreate/>},
     {id:7, path:PATH.stacksUpdate, element:<StacksCreate/>},
-    {id:8, path:PATH.stacksMore, element:<StacksMore/>},
+    {id:8, path:PATH.stacksMore, element:<StackMore/>},
+    {id:9, path:PATH.groupsCreate, element:<GroupCreate/>},
   ]
-
   return (
     <div className="flex">
       <Navbar collapse={collapse}/>
-      <div className={`${collapse ? "w-full" : "w-[82%]" }`}>
-      <Header setCollapse={setCollapse} collapse={collapse}/>
-      <Routes>{routeList.map(item => <Route key={item.id} path={item.path} element={item.element} />)}</Routes>
+      <div className={`${collapse ? "w-full" : "w-[82%]"} `}>
+        <Header setCollapse={setCollapse} collapse={collapse}/>
+        <Routes> {routeList.map(item => <Route key={item.id} path={item.path} element={item.element}/>)} </Routes>
       </div>
     </div>
   )

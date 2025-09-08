@@ -1,15 +1,9 @@
 import axios from "axios";
+import API from "./getEnv";
 import Cookies from "universal-cookie";
-import API from "./getEnx";
 
 const cookies = new Cookies();
 
-const instance = () =>
-  axios.create({
-    baseURL: API,
-    headers: {
-      Authorization: `Bearer ${cookies.get("accessToken")}`,
-    },
-  });
+const instance = () => axios.create({baseURL: API, headers:{"Authorization":`Bearer ${cookies.get("accessToken")}`}});
 
-export default instance;
+export default instance

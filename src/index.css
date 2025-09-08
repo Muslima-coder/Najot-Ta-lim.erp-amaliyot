@@ -4,55 +4,46 @@
     --clr-gold: #bc8e5b
 }
 
-body{
+body {
     background-color: #f1f0ee;
     overflow-y: hidden;
 }
 
-.ant-input-outlined:hover{
+.ant-input-outlined:hover {
     border-color: var(--clr-gold) !important;
 }
 
-.ant-input-outlined:focus-within{
+.ant-input-outlined:focus-within {
     border-color: var(--clr-gold) !important;
     box-shadow: 0 0 0 2px rgba(188, 143, 91, 0.08) !important;
 }
 
-.logo-img{
+.logo-img {
     animation-name: Logo;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
 }
 
-@keyframes Logo{
+@keyframes Logo {
     0% {
-    transform: scale(1) rotateY(0);
+        transform: scale(1) rotateY(0);
     }
 
     100% {
-    transform: scale(1.5) rotateY(360deg);
+        transform: scale(1.5) rotateY(360deg);
     }
 }
-
-
-:where(.css-dev-only-do-not-override-1v28nim).ant-menu-dark .ant-menu-item-selected{
+.ant-menu-item-selected{
     background-color: var(--clr-gold) !important;
 }
-
-:where(.css-dev-only-do-not-override-1v28nim).ant-menu-dark .ant-menu-submenu-selected{
-    background-color: var(--clr-gold) !important;
-}
-
 .navbar-menu > li{
     padding: 25px !important;
 }
-
-.ant-card-cover{
-  width: 300px !important;
-}
-
 .ant-upload{
-    width: 350px !important;
+    width: 400px !important;
     height: 200px !important;
+}
+.ant-spin-dot{
+    color: var(--clr-gold) !important;
 }

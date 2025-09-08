@@ -6,8 +6,8 @@ import { Suspense } from "react"
 const LoginRoutes = () => {
   return (
     <Routes>
-        <Route path={PATH.home} element={<LoginHome/>} />
-        <Route path={PATH.login} element={<Suspense fallback={<PageLoading/>}><Login/></Suspense>} />
+        <Route path={PATH.home} element={<LoginHome/>}/>        
+        <Route path={PATH.login} element={<Suspense fallback={<PageLoading/>}><Login/></Suspense> }/>        
     </Routes>
   )
 }
